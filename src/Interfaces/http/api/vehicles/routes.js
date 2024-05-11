@@ -63,6 +63,16 @@ const routes = (handler) => [
       auth: 'ngangkotin_jwt',
     },
   },
+  {
+    method: 'GET',
+    path: '/hello',
+    handler: (request, h) => {
+      return 'Hello world!';
+    },
+    options: {
+      auth: false,
+    },
+  },
 ];
 
 module.exports = routes;
