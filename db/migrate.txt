@@ -1,0 +1,7 @@
+npm run migrate create "migration name" -> create database migration
+npm run migrate:seed create "migration name" -> create seed migration
+npm run migrate up
+npm run migrate up -- --no-check-order
+npm run migrate down
+npm run migrate down -- --no-check-order
+npm run migrate redo
