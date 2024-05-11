@@ -313,7 +313,7 @@ const createServer = async (container) => {
     );
 
     if (request.payload) {
-      console.log('Request payload:', request.payload);
+      console.log('Request payload: ', request.payload);
     }
 
     if (request.query) {
