@@ -31,8 +31,8 @@ const { createContext } = require('./middlewares/userContext');
 
 const createServer = async (container) => {
   const server = Hapi.server({
-    port: process.env.PORT,
-    host: process.env.HOST,
+    port: process.env.PORT || 8080,
+    host: process.env.HOST || '',
     routes: {
       cors: {
         origin: ['*'],
